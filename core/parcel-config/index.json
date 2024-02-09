@@ -5,7 +5,7 @@
     "@plasmohq/parcel-resolver",
     "@parcel/resolver-default",
     "@plasmohq/parcel-resolver-post",
-    "@plasmohq/parcel-resolver-inlinefunc"
+    "parcel-resolver-inlinefunc"
   ],
   "transformers": {
     "*.plasmo.manifest.json": ["@plasmohq/parcel-transformer-manifest"],

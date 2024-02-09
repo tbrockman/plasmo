@@ -37,12 +37,12 @@
     "@plasmohq/parcel-packager": "workspace:*",
     "@plasmohq/parcel-resolver": "workspace:*",
     "@plasmohq/parcel-resolver-post": "workspace:*",
-    "@plasmohq/parcel-resolver-inlinefunc": "workspace:*",
     "@plasmohq/parcel-runtime": "workspace:*",
     "@plasmohq/parcel-transformer-inject-env": "workspace:*",
     "@plasmohq/parcel-transformer-inline-css": "workspace:*",
     "@plasmohq/parcel-transformer-manifest": "workspace:*",
     "@plasmohq/parcel-transformer-svelte": "workspace:*",
-    "@plasmohq/parcel-transformer-vue": "workspace:*"
+    "@plasmohq/parcel-transformer-vue": "workspace:*",
+    "parcel-resolver-inlinefunc": "link:..\\..\\..\\parcel-resolver-inlinefunc"
   }
 }

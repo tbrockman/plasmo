@@ -85,6 +85,6 @@ declare module "raw-env:*" {
 }
 
 declare module "inlinefunc:*" {
-  const value: (...args: any[]) => void
-  export default value
+  const inlinefunc: (...args: any[]) => void;
+  export default inlinefunc;
 }
