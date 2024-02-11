@@ -90,7 +90,6 @@ export const createParcelBuilder = async (
     cacheDir: resolve(commonPath.cacheDirectory, "parcel"),
     config: runConfig,
     shouldAutoInstall: true,
-
     env: publicEnv.extends(bundleConfig).data,
 
     defaultTargetOptions: {

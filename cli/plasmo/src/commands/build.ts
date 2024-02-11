@@ -36,7 +36,8 @@ async function build() {
     defaultTargetOptions: {
       shouldOptimize: true,
       shouldScopeHoist: hasFlag("--hoist")
-    }
+    },
+    logLevel: process.env.VERBOSE === "true" ? "verbose" : "info"
   })
 
   const result = await bundler.run()
