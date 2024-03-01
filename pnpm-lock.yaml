@@ -559,8 +559,8 @@ importers:
         specifier: workspace:*
         version: link:../parcel-transformer-vue
       parcel-resolver-inlinefunc:
-        specifier: 0.0.3
-        version: 0.0.3(@parcel/core@2.9.3)
+        specifier: 1.0.0
+        version: 1.0.0(@parcel/core@2.9.3)
 
   core/parcel-core:
     dependencies:
@@ -15614,8 +15614,8 @@ packages:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
     dev: true
 
-  /parcel-resolver-inlinefunc@0.0.3(@parcel/core@2.9.3):
-    resolution: {integrity: sha512-wtNKS30vCz4jjWiFxNyMIajPgOatCfG3ExPriK6AzyurhLBWqlMRNXFItj+4SX/PUc9aACIkoDK2Equ/fFIgLg==}
+  /parcel-resolver-inlinefunc@1.0.0(@parcel/core@2.9.3):
+    resolution: {integrity: sha512-ztq7gCzCIOdPCSm+VI+68H76qCEH4BFC/0Ea+oqhKofTA6zLz9OJGUuA4Plmq0/Tnkp30w1ZLJTcgtAfxzc9VQ==}
     engines: {parcel: '>= 2.7.0'}
     dependencies:
       '@parcel/node-resolver-core': 3.2.0(@parcel/core@2.9.3)

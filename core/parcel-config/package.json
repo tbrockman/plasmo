@@ -43,6 +43,6 @@
     "@plasmohq/parcel-transformer-manifest": "workspace:*",
     "@plasmohq/parcel-transformer-svelte": "workspace:*",
     "@plasmohq/parcel-transformer-vue": "workspace:*",
-    "parcel-resolver-inlinefunc": "0.0.3"
+    "parcel-resolver-inlinefunc": "1.0.0"
   }
 }
