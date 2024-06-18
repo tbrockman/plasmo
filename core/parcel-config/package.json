@@ -42,7 +42,6 @@
     "@plasmohq/parcel-transformer-inline-css": "workspace:*",
     "@plasmohq/parcel-transformer-manifest": "workspace:*",
     "@plasmohq/parcel-transformer-svelte": "workspace:*",
-    "@plasmohq/parcel-transformer-vue": "workspace:*",
-    "parcel-resolver-inlinefunc": "1.0.0"
+    "@plasmohq/parcel-transformer-vue": "workspace:*"
   }
 }
