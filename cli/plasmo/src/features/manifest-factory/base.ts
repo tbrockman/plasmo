@@ -36,7 +36,7 @@ import {
 import { assertTruthy } from "@plasmo/utils/assert"
 import { injectEnv } from "@plasmo/utils/env"
 import { isDirectory, isReadable } from "@plasmo/utils/fs"
-import { vLog } from "@plasmo/utils/logging"
+import { vLog, wLog } from "@plasmo/utils/logging"
 import { getSubExt, toPosix } from "@plasmo/utils/path"
 
 import { loadEnvConfig, type EnvConfig } from "~features/env/env-config"
@@ -224,6 +224,19 @@ export abstract class PlasmoManifest<T extends ExtensionManifest = any> {
         }
       })
     )
+
+    if (!process.env.POST_BUILD_SCRIPT) {
+      return
+    }
+    const postBuildPath = resolve(process.env.POST_BUILD_SCRIPT)
+
+    if (!existsSync(postBuildPath)) {
+      wLog("Post-build script is unavailable:", postBuildPath)
+      return
+    }
+
+    const postBuild = require(postBuildPath)
+    postBuild()
   }
 
   async updateEnv() {
@@ -478,9 +491,8 @@ export abstract class PlasmoManifest<T extends ExtensionManifest = any> {
 
       const parsedModulePath = parse(scriptPath)
 
-      const { wereFilesWritten } = await this.scaffolder.createPageMount(
-        parsedModulePath
-      )
+      const { wereFilesWritten } =
+        await this.scaffolder.createPageMount(parsedModulePath)
 
       // if enabled, and the template file was written, invalidate hash!
       if (wereFilesWritten) {
