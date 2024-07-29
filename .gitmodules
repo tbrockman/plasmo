@@ -17,16 +17,20 @@
 [submodule "packages/permission-ui"]
 	path = packages/permission-ui
 	url = git@github.com:PlasmoHQ/permission-ui.git
+	branch = main
 [submodule "packages/utils"]
 	path = packages/utils
-	url = https://github.com/PlasmoHQ/plasmo-utils.git
+	url = git@github.com:PlasmoHQ/plasmo-utils.git
+	branch = main
 [submodule "packages/constants"]
 	path = packages/constants
-	url = https://github.com/PlasmoHQ/plasmo-constants.git
+	url = git@github.com:PlasmoHQ/plasmo-constants.git
+	branch = main
 [submodule "packages/config"]
 	path = packages/config
-	url = https://github.com/PlasmoHQ/plasmo-config.git
+	url = git@github.com:PlasmoHQ/plasmo-config.git
+	branch = main
 [submodule "api/storage"]
 	path = api/storage
-	url = https://github.com/tbrockman/storage.git
+	url = git@github.com:PlasmoHQ/storage.git
 	branch = main
