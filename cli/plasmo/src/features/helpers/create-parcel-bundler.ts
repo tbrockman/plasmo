@@ -6,7 +6,8 @@ import { emptyDir, ensureDir, exists, readJson, writeJson } from "fs-extra"
 import { getFlag, hasFlag } from "@plasmo/utils/flags"
 import { wLog } from "@plasmo/utils/logging"
 
-import { Parcel, type ParcelOptions } from "@plasmohq/parcel-core"
+import { Parcel } from "@parcel/core"
+import type { InitialParcelOptions as ParcelOptions } from "@parcel/types"
 
 import type { PlasmoManifest } from "~features/manifest-factory/base"
 

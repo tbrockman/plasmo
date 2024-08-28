@@ -3,9 +3,12 @@
  * MIT License
  */
 import { Namer } from "@parcel/plugin"
+import { vLog } from "@plasmo/utils/logging"
 
 export default new Namer({
   name({ bundle }) {
+    vLog("@plasmohq/parcel-namer-manifest")
+
     const mainEntry = bundle.getMainEntry()
 
     if (!mainEntry) {

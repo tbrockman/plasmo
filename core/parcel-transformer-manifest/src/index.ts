@@ -112,6 +112,8 @@ export default new Transformer({
     state.asset.meta.webextEntry = true
 
     vLog("+ Finished transforming manifest")
-    return state.getAssets()
+    const assets = state.getAssets()
+    vLog(`+ Got assets: ${assets.length}`)
+    return assets
   }
 })

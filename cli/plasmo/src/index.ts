@@ -16,37 +16,31 @@ async function defaultMode() {
 }
 
 async function main() {
-  try {
-    // In case someone pasted an essay into the cli
-    if (argv.length > 10) {
-      throw new Error(ErrorMessage.TooManyArg)
-    }
+  // In case someone pasted an essay into the cli
+  if (argv.length > 10) {
+    throw new Error(ErrorMessage.TooManyArg)
+  }
 
-    if (semver.major(versions.node) < 16) {
-      throw new Error("Node version must be >= 16")
-    }
+  if (semver.major(versions.node) < 16) {
+    throw new Error("Node version must be >= 16")
+  }
 
-    process.env.VERBOSE = verbose ? "true" : "false"
+  process.env.VERBOSE = verbose ? "true" : "false"
 
-    // Setting startup policy/daemon
-    const mode = argv.find((arg) =>
-      validCommandSet.has(arg as ValidCommand)
-    ) as ValidCommand
+  // Setting startup policy/daemon
+  const mode = argv.find((arg) =>
+    validCommandSet.has(arg as ValidCommand)
+  ) as ValidCommand
 
-    if (mode in runMap) {
-      vLog("Running command:", mode)
+  if (mode in runMap) {
+    vLog("Running command:", mode)
 
-      const { default: runner } = await runMap[mode]()
+    const { default: runner } = await runMap[mode]()
 
-      await runner()
-    } else {
-      vLog("Running default mode")
-      await defaultMode()
-    }
-  } catch (e) {
-    eLog((e as Error)?.message || ErrorMessage.Unknown)
-    vLog(e?.stack)
-    exit(1)
+    await runner()
+  } else {
+    vLog("Running default mode")
+    await defaultMode()
   }
 }
 

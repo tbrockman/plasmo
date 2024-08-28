@@ -20,9 +20,11 @@ import RequestTracker, {
   requestGraphEdgeTypes
 } from "@parcel/core/lib/RequestTracker"
 import {
-  BuildAbortError,
-  registerCoreWithSerializer
+  BuildAbortError
 } from "@parcel/core/lib/utils"
+import {
+  registerCoreWithSerializer
+} from "@parcel/core/lib/registerCoreWithSerializer"
 import ThrowableDiagnostic, {
   anyToDiagnostic,
   type Diagnostic
