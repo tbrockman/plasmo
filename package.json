@@ -15,7 +15,7 @@
     "build:packages": "turbo run build --filter \"./packages/**\"",
     "build:api": "turbo run build --filter \"./api/**\"",
     "build:core": "turbo run build --filter \"./core/**\"",
-    "build:examples": "pnpm --filter \"./examples/**\" --aggregate-output --reporter=append-only --parallel -r build",
+    "build:examples": "pnpm --filter \"./examples/**\" --aggregate-output --reporter=append-only -r build",
     "clean:examples": "pnpm --filter \"./examples/**\" -r exec plasmo clean",
     "publish:packages": "pnpm --filter \"./packages/**\" publish",
     "publish:api": "pnpm --filter \"./api/**\" publish",
