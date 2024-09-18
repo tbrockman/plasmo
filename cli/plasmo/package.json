@@ -1,6 +1,6 @@
 {
   "name": "plasmo",
-  "version": "0.89.1",
+  "version": "0.89.2",
   "description": "The Plasmo Framework CLI",
   "publishConfig": {
     "types": "dist/type.d.ts"
@@ -38,6 +38,7 @@
     "framework"
   ],
   "dependencies": {
+    "@plasmohq/parcel-core": "workspace:*",
     "@expo/spawn-async": "1.7.2",
     "@parcel/core": "catalog:",
     "@parcel/fs": "catalog:",

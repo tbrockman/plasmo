@@ -8,7 +8,7 @@ packages:
 # reference: https://pnpm.io/catalogs
 catalog:
   "@parcel/bundler-default": "2.12.0"
-  "@parcel/core": "2.12.0"
+  "@parcel/core": "^2.12.0"
   "@parcel/diagnostic": "2.12.0"
   "@parcel/fs": "2.12.0"
   "@parcel/package-manager": "2.12.0"

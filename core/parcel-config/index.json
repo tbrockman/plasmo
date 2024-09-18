@@ -3,8 +3,7 @@
   "resolvers": [
     "@plasmohq/parcel-resolver",
     "@parcel/resolver-default",
-    "@plasmohq/parcel-resolver-post",
-    "..."
+    "@plasmohq/parcel-resolver-post"
   ],
   "reporters": [
     "...",

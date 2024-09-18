@@ -76,7 +76,7 @@ export class Scaffolder {
 
     const hasIndex = indexFile !== undefined
 
-    // console.log({ indexFile, hasIndex })
+    console.log({ indexFile, hasIndex })
 
     const indexImport = hasIndex
       ? toPosix(relative(staticDirectory, indexFile))
