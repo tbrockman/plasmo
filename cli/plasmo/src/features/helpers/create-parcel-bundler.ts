@@ -10,6 +10,7 @@ import { Parcel, type ParcelOptions } from "@plasmohq/parcel-core"
 import type { PlasmoManifest } from "~features/manifest-factory/base"
 
 import { getPackageManager } from "./package-manager"
+import { setInternalEnv } from "~features/env/env-config"
 
 const PackageInstallerMap = {
   npm: ParcelPM.Npm,
@@ -102,6 +103,8 @@ export const createParcelBuilder = async (
         ? ["IE 11"]
         : ["last 1 Chrome version"]
   }
+
+  setInternalEnv(bundleConfig)
 
   const bundler = new Parcel({
     inputFS,
