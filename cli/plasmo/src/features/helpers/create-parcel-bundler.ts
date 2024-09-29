@@ -1,16 +1,17 @@
 import { dirname, join, resolve } from "path"
+import { Parcel } from "@parcel/core"
 import ParcelFS from "@parcel/fs"
 import ParcelPM from "@parcel/package-manager"
+import type { InitialParcelOptions } from "@parcel/types"
 import { emptyDir, ensureDir, exists, readJson, writeJson } from "fs-extra"
 
 import { getFlag, hasFlag } from "@plasmo/utils/flags"
 import { wLog } from "@plasmo/utils/logging"
 
-import { Parcel, type ParcelOptions } from "@plasmohq/parcel-core"
+import { setInternalEnv } from "~features/env/env-config"
 import type { PlasmoManifest } from "~features/manifest-factory/base"
 
 import { getPackageManager } from "./package-manager"
-import { setInternalEnv } from "~features/env/env-config"
 
 const PackageInstallerMap = {
   npm: ParcelPM.Npm,
@@ -20,7 +21,7 @@ const PackageInstallerMap = {
 
 export const createParcelBuilder = async (
   { commonPath, bundleConfig, publicEnv }: PlasmoManifest,
-  { defaultTargetOptions = {}, ...options }: ParcelOptions
+  { defaultTargetOptions = {}, ...options }: InitialParcelOptions
 ) => {
   const isProd = options.mode === "production"
 
@@ -114,7 +115,11 @@ export const createParcelBuilder = async (
     config: runConfig,
     shouldAutoInstall: true,
 
-    env: publicEnv.extends(bundleConfig).data,
+    env: {
+      ...publicEnv.extends(bundleConfig).data,
+      PARCEL_WORKERS: "0",
+      PARCEL_MAX_CONCURRENT_CALLS: "1"
+    },
 
     defaultTargetOptions: {
       ...defaultTargetOptions,

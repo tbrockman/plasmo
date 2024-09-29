@@ -1,6 +1,6 @@
 {
   "name": "@plasmohq/parcel-config",
-  "version": "0.41.1",
+  "version": "0.41.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -43,8 +43,9 @@
     "@plasmohq/parcel-transformer-manifest": "workspace:*",
     "@plasmohq/parcel-transformer-svelte": "workspace:*",
     "@plasmohq/parcel-transformer-vue": "workspace:*",
-    "parcel-resolver-tspaths": "0.0.9",
-    "parcel-resolver-typescript-module": "0.1.9",
-    "svgo": "3.3.2"
+    "svgo": "^3.0.2"
+  },
+  "devDependencies": {
+    "@plasmohq/parcel-bundler": "workspace:0.5.6"
   }
 }
