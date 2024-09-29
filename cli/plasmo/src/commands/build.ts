@@ -35,6 +35,7 @@ async function build() {
     mode: "production",
     shouldDisableCache: true,
     shouldContentHash: false,
+    // TODO: logLevel
     defaultTargetOptions: {
       shouldOptimize: true,
       shouldScopeHoist: hasFlag("--hoist")
