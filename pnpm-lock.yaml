@@ -10,8 +10,8 @@ catalogs:
       specifier: nightly
       version: 2.0.0-canary.1728
     '@parcel/compressor-raw':
-      specifier: latest
-      version: 2.12.0
+      specifier: nightly
+      version: 2.12.1-canary.3351
     '@parcel/config-default':
       specifier: nightly
       version: 2.0.0-canary.1728
@@ -25,11 +25,11 @@ catalogs:
       specifier: nightly
       version: 2.0.0-canary.1728
     '@parcel/graph':
-      specifier: 3.2.0
-      version: 3.2.0
+      specifier: nightly
+      version: 3.2.1-canary.3351
     '@parcel/hash':
-      specifier: 2.9.3
-      version: 2.9.3
+      specifier: nightly
+      version: 2.9.4-nightly.2985
     '@parcel/optimizer-data-url':
       specifier: nightly
       version: 2.0.0-canary.1728
@@ -40,8 +40,8 @@ catalogs:
       specifier: nightly
       version: 2.0.0-canary.1728
     '@parcel/reporter-bundle-buddy':
-      specifier: latest
-      version: 2.12.0
+      specifier: nightly
+      version: 2.12.1-canary.3351
     '@parcel/resolver-default':
       specifier: nightly
       version: 2.0.0-canary.1728
@@ -49,8 +49,8 @@ catalogs:
       specifier: nightly
       version: 2.0.0-canary.1728
     '@parcel/runtime-service-worker':
-      specifier: latest
-      version: 2.12.0
+      specifier: nightly
+      version: 2.12.1-canary.3351
     '@parcel/transformer-babel':
       specifier: nightly
       version: 2.0.0-canary.1728
@@ -504,10 +504,10 @@ importers:
         version: 2.0.0-canary.1728
       '@parcel/graph':
         specifier: 'catalog:'
-        version: 3.2.0
+        version: 3.2.1-canary.3351
       '@parcel/hash':
         specifier: 'catalog:'
-        version: 2.9.3
+        version: 2.9.4-nightly.2985
       '@parcel/plugin':
         specifier: 'catalog:'
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
@@ -554,7 +554,7 @@ importers:
     dependencies:
       '@parcel/compressor-raw':
         specifier: 'catalog:'
-        version: 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
+        version: 2.12.1-canary.3351(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
       '@parcel/config-default':
         specifier: 'catalog:'
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)(postcss@8.4.47)(terser@5.34.1)(typescript@5.3.3)
@@ -566,7 +566,7 @@ importers:
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
       '@parcel/reporter-bundle-buddy':
         specifier: 'catalog:'
-        version: 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
+        version: 2.12.1-canary.3351(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
       '@parcel/resolver-default':
         specifier: 'catalog:'
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
@@ -575,7 +575,7 @@ importers:
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
       '@parcel/runtime-service-worker':
         specifier: 'catalog:'
-        version: 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
+        version: 2.12.1-canary.3351(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
       '@parcel/source-map':
         specifier: 2.1.1
         version: 2.1.1
@@ -800,7 +800,7 @@ importers:
         version: 2.0.0-canary.1726(@swc/helpers@0.5.13)
       '@parcel/hash':
         specifier: 'catalog:'
-        version: 2.9.3
+        version: 2.9.4-nightly.2985
       '@parcel/plugin':
         specifier: 'catalog:'
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
@@ -912,7 +912,7 @@ importers:
         version: 2.0.0-canary.1726(@swc/helpers@0.5.13)
       '@parcel/hash':
         specifier: 'catalog:'
-        version: 2.9.3
+        version: 2.9.4-nightly.2985
       '@parcel/plugin':
         specifier: 'catalog:'
         version: 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
@@ -5623,23 +5623,9 @@ packages:
     peerDependencies:
       '@parcel/core': ^2.0.0-canary.1726+d1f3ffeeb
 
-  '@parcel/cache@2.12.0':
-    resolution: {integrity: sha512-FX5ZpTEkxvq/yvWklRHDESVRz+c7sLTXgFuzz6uEnBcXV38j6dMSikflNpHA6q/L4GKkCqRywm9R6XQwhwIMyw==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@parcel/core': ^2.12.0
-
   '@parcel/codeframe@2.0.0-canary.1728':
     resolution: {integrity: sha512-e+L7vNs3XAkxYKKh0n4bmwwqAt9Jl1h/k3K7ZnOENPD8XIt1qZqcgaznZ/UpcxGGNXeP9nkCV7Tj0HH+IKq+4w==}
     engines: {node: '>= 16.0.0'}
-
-  '@parcel/codeframe@2.12.0':
-    resolution: {integrity: sha512-v2VmneILFiHZJTxPiR7GEF1wey1/IXPdZMcUlNXBiPZyWDfcuNgGGVQkx/xW561rULLIvDPharOMdxz5oHOKQg==}
-    engines: {node: '>= 12.0.0'}
-
-  '@parcel/compressor-raw@2.12.0':
-    resolution: {integrity: sha512-h41Q3X7ZAQ9wbQ2csP8QGrwepasLZdXiuEdpUryDce6rF9ZiHoJ97MRpdLxOhOPyASTw/xDgE1xyaPQr0Q3f5A==}
-    engines: {node: '>= 12.0.0', parcel: ^2.12.0}
 
   '@parcel/compressor-raw@2.12.1-canary.3351':
     resolution: {integrity: sha512-vNqPxkn3lJZk4M2mCeL3Voq0WyMCDuj+0RcrINXNVL/IByY2FUFKpmPsPkbvRLC1fObhS7ddHTscJBFvyji9vA==}
@@ -5658,17 +5644,9 @@ packages:
     resolution: {integrity: sha512-BctdBsAylL6DY3ZZWXjCE4/8HpDs1rBWTA4xDI7ZuKFDV3+LIFSMONVD1NxwHHyzlTxakQYXFcILLWYff+ODgg==}
     engines: {node: '>= 16.0.0'}
 
-  '@parcel/diagnostic@2.12.0':
-    resolution: {integrity: sha512-8f1NOsSFK+F4AwFCKynyIu9Kr/uWHC+SywAv4oS6Bv3Acig0gtwUjugk0C9UaB8ztBZiW5TQZhw+uPZn9T/lJA==}
-    engines: {node: '>= 12.0.0'}
-
   '@parcel/events@2.0.0-canary.1728':
     resolution: {integrity: sha512-cRTRcNfk+LmnSUSo4EcJtuyDsSEyL6MxIv+X0AWaAJEHq0QHm+fwbARCiNeLyRGx2zsiR3Zf+C/HVDBfxBgv2g==}
     engines: {node: '>= 16.0.0'}
-
-  '@parcel/events@2.12.0':
-    resolution: {integrity: sha512-nmAAEIKLjW1kB2cUbCYSmZOGbnGj8wCzhqnK727zCCWaA25ogzAtt657GPOeFyqW77KyosU728Tl63Fc8hphIA==}
-    engines: {node: '>= 12.0.0'}
 
   '@parcel/feature-flags@2.12.1-canary.3351':
     resolution: {integrity: sha512-2vRrXu4mkJgB/Ty/ldCDS+K37TH7Z/k9e7HOuCMT7Qk3HxDkrvvF+DPDFT09k/A8Iq/VfjGzGfpkw0A/WkdWIA==}
@@ -5680,47 +5658,25 @@ packages:
     peerDependencies:
       '@parcel/core': ^2.0.0-canary.1726+d1f3ffeeb
 
-  '@parcel/fs@2.12.0':
-    resolution: {integrity: sha512-NnFkuvou1YBtPOhTdZr44WN7I60cGyly2wpHzqRl62yhObyi1KvW0SjwOMa0QGNcBOIzp4G0CapoZ93hD0RG5Q==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@parcel/core': ^2.12.0
-
-  '@parcel/graph@3.2.0':
-    resolution: {integrity: sha512-xlrmCPqy58D4Fg5umV7bpwDx5Vyt7MlnQPxW68vae5+BA4GSWetfZt+Cs5dtotMG2oCHzZxhIPt7YZ7NRyQzLA==}
-    engines: {node: '>= 12.0.0'}
-
   '@parcel/graph@3.2.1-canary.3351':
     resolution: {integrity: sha512-/JcwljswqkJEzA8m59z/5xyOGXUhyAyYKrcuazRcefw6ZZXyTTeR5mU98z4XceYw4t6hoSzYbwuslexF0VbikQ==}
     engines: {node: '>= 16.0.0'}
 
-  '@parcel/hash@2.9.3':
-    resolution: {integrity: sha512-qlH5B85XLzVAeijgKPjm1gQu35LoRYX/8igsjnN8vOlbc3O8BYAUIutU58fbHbtE8MJPbxQQUw7tkTjeoujcQQ==}
+  '@parcel/hash@2.9.4-nightly.2985':
+    resolution: {integrity: sha512-tqpt0FMzQ3YaMJsS05g8c5Zp35wpFCRKZRLXr/1HI9GJyP0/d0w9WoTYzQyblo7JiknPAcF9zDF3kLvzJ+IKPw==}
     engines: {node: '>= 12.0.0'}
 
   '@parcel/logger@2.0.0-canary.1728':
     resolution: {integrity: sha512-7RpLYlo8N1T0zX8yhBCHxn+WA1Pykqf9qqDtLuYcjbzAj7zViyRUlrT0S2jlOegIdv+MqqO2wRy34kghsfbVrg==}
     engines: {node: '>= 16.0.0'}
 
-  '@parcel/logger@2.12.0':
-    resolution: {integrity: sha512-cJ7Paqa7/9VJ7C+KwgJlwMqTQBOjjn71FbKk0G07hydUEBISU2aDfmc/52o60ErL9l+vXB26zTrIBanbxS8rVg==}
-    engines: {node: '>= 12.0.0'}
-
   '@parcel/markdown-ansi@2.0.0-canary.1728':
     resolution: {integrity: sha512-OA5sCDMkE7NMxFFQ4iWozrK4gly98MLAR4ekPakJuPkjLpzs3X/HSmYcLFEaSaOJe0YK8NtYrntddVEy8AOqvQ==}
     engines: {node: '>= 16.0.0'}
 
-  '@parcel/markdown-ansi@2.12.0':
-    resolution: {integrity: sha512-WZz3rzL8k0H3WR4qTHX6Ic8DlEs17keO9gtD4MNGyMNQbqQEvQ61lWJaIH0nAtgEetu0SOITiVqdZrb8zx/M7w==}
-    engines: {node: '>= 12.0.0'}
-
   '@parcel/namer-default@2.0.0-canary.1728':
     resolution: {integrity: sha512-eewQLDdoIlfKj0Zb2HtG7g8qxOn7MMiM0VT+IR45Gx6LwcTX0tgiMYGb3cqZaHf4Sv45UGfh8qH3tM8v93NXyg==}
     engines: {node: '>= 16.0.0', parcel: ^2.0.0-canary.1726+d1f3ffeeb}
-
-  '@parcel/node-resolver-core@3.3.0':
-    resolution: {integrity: sha512-rhPW9DYPEIqQBSlYzz3S0AjXxjN6Ub2yS6tzzsW/4S3Gpsgk/uEq4ZfxPvoPf/6TgZndVxmKwpmxaKtGMmf3cA==}
-    engines: {node: '>= 12.0.0'}
 
   '@parcel/node-resolver-core@3.3.1-canary.3351':
     resolution: {integrity: sha512-Xk0dEOKU5B57h4DhtTomE3v3xIp5PTWxd9NOsqati0V2EPnYbQdGd0hvQ/DgAlr/CQspOKCOl1P+3YmotSDdtw==}
@@ -5758,12 +5714,6 @@ packages:
     peerDependencies:
       '@parcel/core': ^2.0.0-canary.1726+d1f3ffeeb
 
-  '@parcel/package-manager@2.12.0':
-    resolution: {integrity: sha512-0nvAezcjPx9FT+hIL+LS1jb0aohwLZXct7jAh7i0MLMtehOi0z1Sau+QpgMlA9rfEZZ1LIeFdnZZwqSy7Ccspw==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@parcel/core': ^2.12.0
-
   '@parcel/packager-css@2.0.0-canary.1728':
     resolution: {integrity: sha512-3mKPrkDbJV0oEy7SFg00ITBgvjgg+pXTvvqj6W+CnwQDhngvLwIz8N1M1jhyigingJ6NkgsU/8Vth9kgaOn8HQ==}
     engines: {node: '>= 16.0.0', parcel: ^2.0.0-canary.1726+d1f3ffeeb}
@@ -5792,21 +5742,13 @@ packages:
     resolution: {integrity: sha512-CIv8Q7rveb5Y04O2XHiZUZXVE0gqfWe5pR+O3xIYhPngA7rx5CSnMYu+T5eBOWE8JKvUZbCjILVmP2WFFBiwLg==}
     engines: {node: '>= 16.0.0'}
 
-  '@parcel/plugin@2.12.0':
-    resolution: {integrity: sha512-nc/uRA8DiMoe4neBbzV6kDndh/58a4wQuGKw5oEoIwBCHUvE2W8ZFSu7ollSXUGRzfacTt4NdY8TwS73ScWZ+g==}
-    engines: {node: '>= 12.0.0'}
-
-  '@parcel/profiler@2.12.0':
-    resolution: {integrity: sha512-q53fvl5LDcFYzMUtSusUBZSjQrKjMlLEBgKeQHFwkimwR1mgoseaDBDuNz0XvmzDzF1UelJ02TUKCGacU8W2qA==}
-    engines: {node: '>= 12.0.0'}
-
   '@parcel/profiler@2.12.1-canary.3351':
     resolution: {integrity: sha512-dcf+mzTaAN+lbNwreHOvbEMqysHwOD7jLlA8vD5jC7IZ/1jUUMbvf1qqPH+y8ADUdbqyyO2vefRI0O6GvxDSNg==}
     engines: {node: '>= 16.0.0'}
 
-  '@parcel/reporter-bundle-buddy@2.12.0':
-    resolution: {integrity: sha512-++I/vqduL4mTEvTZFWtBcXhj5EIgUZ/ahlvpdaxEq+XoqTXT8wz3xIsLnTdDjHn+VRj3ry7SYWioxmlKYSwM2w==}
-    engines: {node: '>= 12.0.0', parcel: ^2.12.0}
+  '@parcel/reporter-bundle-buddy@2.12.1-canary.3351':
+    resolution: {integrity: sha512-/isc6F/RaJp6cxEHM/to4ggT3x59BLhPDWrmGu7Osl+1e6Rf8qeVrW4qhZRmYDMsSVaQIIqp6J8/NNJqCOnUOQ==}
+    engines: {node: '>= 16.0.0', parcel: ^2.0.0-canary.1726+d1f3ffeeb}
 
   '@parcel/reporter-dev-server@2.0.0-canary.1728':
     resolution: {integrity: sha512-iFr/FYijbeXv8rF5iv7+X2aTtv03r94qNYhzlR1nYtYrjPFlNmZKUFhg8hssey6I9PEr0VdKS5Sigu6FXmv0BQ==}
@@ -5828,17 +5770,9 @@ packages:
     resolution: {integrity: sha512-xeGv7CEITm5jgvJrQKZUkFfmNqt2ll3r+26YfBuuYJuvMd3WJwqOz09IFOy03dU6yuZM9GMVY6+ltrowV8U7VQ==}
     engines: {node: '>= 16.0.0', parcel: ^2.0.0-canary.1726+d1f3ffeeb}
 
-  '@parcel/runtime-service-worker@2.12.0':
-    resolution: {integrity: sha512-BXuMBsfiwpIEnssn+jqfC3jkgbS8oxeo3C7xhSQsuSv+AF2FwY3O3AO1c1RBskEW3XrBLNINOJujroNw80VTKA==}
-    engines: {node: '>= 12.0.0', parcel: ^2.12.0}
-
   '@parcel/runtime-service-worker@2.12.1-canary.3351':
     resolution: {integrity: sha512-wiBmNbXgPkPIC44SQRsEeCz+CJ8GEWwU6bhdzh2tc3Z7GlmpHp3EzbTOxYB7gaqCjeMWDqMPT5gzG+3wHp1E4A==}
     engines: {node: '>= 16.0.0', parcel: ^2.0.0-canary.1726+d1f3ffeeb}
-
-  '@parcel/rust@2.12.0':
-    resolution: {integrity: sha512-005cldMdFZFDPOjbDVEXcINQ3wT4vrxvSavRWI3Az0e3E18exO/x/mW9f648KtXugOXMAqCEqhFHcXECL9nmMw==}
-    engines: {node: '>= 12.0.0'}
 
   '@parcel/rust@2.12.1-canary.3351':
     resolution: {integrity: sha512-ZXUlJNGUePnNLjl9hB4BH92YE0vvHJC6qMMyv44G8ir0kgrr5WCIyrBW3EAsJ2w3wckSaoKq3H6WNWjcjqj2zA==}
@@ -5926,16 +5860,9 @@ packages:
   '@parcel/types@2.0.0-canary.1728':
     resolution: {integrity: sha512-RbPMTJ0bSq9JC8Nkv9WJ0k/t5xg7xuhQBRCz4PhOwwkJSgf/YGYichlYDtZmGo15qdn4VyZXol0NBs0xr0tlXw==}
 
-  '@parcel/types@2.12.0':
-    resolution: {integrity: sha512-8zAFiYNCwNTQcglIObyNwKfRYQK5ELlL13GuBOrSMxueUiI5ylgsGbTS1N7J3dAGZixHO8KhHGv5a71FILn9rQ==}
-
   '@parcel/utils@2.0.0-canary.1728':
     resolution: {integrity: sha512-YpsLZgLAkc1Xa5rFJs/Y6NUT0pGEq8Mmqsc2PyTe+E3/xcP/UC4ya/NriY7Zr1HxOsiApdh9glvT/mzNpQpvpw==}
     engines: {node: '>= 16.0.0'}
-
-  '@parcel/utils@2.12.0':
-    resolution: {integrity: sha512-z1JhLuZ8QmDaYoEIuUCVZlhcFrS7LMfHrb2OCRui5SQFntRWBH2fNM6H/fXXUkT9SkxcuFP2DUA6/m4+Gkz72g==}
-    engines: {node: '>= 12.0.0'}
 
   '@parcel/watcher-android-arm64@2.4.0':
     resolution: {integrity: sha512-+fPtO/GsbYX1LJnCYCaDVT3EOBjvSFdQN9Mrzh9zWAOOfvidPWyScTrHIZHHfJBvlHzNA0Gy0U3NXFA/M7PHUA==}
@@ -6094,12 +6021,6 @@ packages:
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       '@parcel/core': ^2.0.0-canary.1726+d1f3ffeeb
-
-  '@parcel/workers@2.12.0':
-    resolution: {integrity: sha512-zv5We5Jmb+ZWXlU6A+AufyjY4oZckkxsZ8J4dvyWL0W8IQvGO1JB4FGeryyttzQv3RM3OxcN/BpTGPiDG6keBw==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@parcel/core': ^2.12.0
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -15481,30 +15402,9 @@ snapshots:
       '@parcel/utils': 2.0.0-canary.1728
       lmdb: 2.8.5
 
-  '@parcel/cache@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/core': 2.0.0-canary.1726(@swc/helpers@0.5.13)
-      '@parcel/fs': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/logger': 2.12.0
-      '@parcel/utils': 2.12.0
-      lmdb: 2.8.5
-    transitivePeerDependencies:
-      - '@swc/helpers'
-
   '@parcel/codeframe@2.0.0-canary.1728':
     dependencies:
       chalk: 4.1.2
-
-  '@parcel/codeframe@2.12.0':
-    dependencies:
-      chalk: 4.1.2
-
-  '@parcel/compressor-raw@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/plugin': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-    transitivePeerDependencies:
-      - '@parcel/core'
-      - '@swc/helpers'
 
   '@parcel/compressor-raw@2.12.1-canary.3351(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))':
     dependencies:
@@ -15592,14 +15492,7 @@ snapshots:
       '@mischnic/json-sourcemap': 0.1.0
       nullthrows: 1.1.1
 
-  '@parcel/diagnostic@2.12.0':
-    dependencies:
-      '@mischnic/json-sourcemap': 0.1.0
-      nullthrows: 1.1.1
-
   '@parcel/events@2.0.0-canary.1728': {}
-
-  '@parcel/events@2.12.0': {}
 
   '@parcel/feature-flags@2.12.1-canary.3351': {}
 
@@ -15613,27 +15506,12 @@ snapshots:
       '@parcel/watcher': 2.4.0
       '@parcel/workers': 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
 
-  '@parcel/fs@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/core': 2.0.0-canary.1726(@swc/helpers@0.5.13)
-      '@parcel/rust': 2.12.0
-      '@parcel/types': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/utils': 2.12.0
-      '@parcel/watcher': 2.4.0
-      '@parcel/workers': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-    transitivePeerDependencies:
-      - '@swc/helpers'
-
-  '@parcel/graph@3.2.0':
-    dependencies:
-      nullthrows: 1.1.1
-
   '@parcel/graph@3.2.1-canary.3351':
     dependencies:
       '@parcel/feature-flags': 2.12.1-canary.3351
       nullthrows: 1.1.1
 
-  '@parcel/hash@2.9.3':
+  '@parcel/hash@2.9.4-nightly.2985':
     dependencies:
       xxhash-wasm: 0.4.2
 
@@ -15642,16 +15520,7 @@ snapshots:
       '@parcel/diagnostic': 2.0.0-canary.1728
       '@parcel/events': 2.0.0-canary.1728
 
-  '@parcel/logger@2.12.0':
-    dependencies:
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/events': 2.12.0
-
   '@parcel/markdown-ansi@2.0.0-canary.1728':
-    dependencies:
-      chalk: 4.1.2
-
-  '@parcel/markdown-ansi@2.12.0':
     dependencies:
       chalk: 4.1.2
 
@@ -15660,18 +15529,6 @@ snapshots:
       '@parcel/diagnostic': 2.0.0-canary.1728
       '@parcel/plugin': 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
       nullthrows: 1.1.1
-    transitivePeerDependencies:
-      - '@parcel/core'
-
-  '@parcel/node-resolver-core@3.3.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))':
-    dependencies:
-      '@mischnic/json-sourcemap': 0.1.0
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/fs': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/rust': 2.12.0
-      '@parcel/utils': 2.12.0
-      nullthrows: 1.1.1
-      semver: 7.5.4
     transitivePeerDependencies:
       - '@parcel/core'
 
@@ -15771,21 +15628,6 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@parcel/package-manager@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/core': 2.0.0-canary.1726(@swc/helpers@0.5.13)
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/fs': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/logger': 2.12.0
-      '@parcel/node-resolver-core': 3.3.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
-      '@parcel/types': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/utils': 2.12.0
-      '@parcel/workers': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@swc/core': 1.3.96(@swc/helpers@0.5.13)
-      semver: 7.5.4
-    transitivePeerDependencies:
-      - '@swc/helpers'
-
   '@parcel/packager-css@2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))':
     dependencies:
       '@parcel/diagnostic': 2.0.0-canary.1728
@@ -15847,19 +15689,6 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
 
-  '@parcel/plugin@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/types': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-    transitivePeerDependencies:
-      - '@parcel/core'
-      - '@swc/helpers'
-
-  '@parcel/profiler@2.12.0':
-    dependencies:
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/events': 2.12.0
-      chrome-trace-event: 1.0.4
-
   '@parcel/profiler@2.12.1-canary.3351':
     dependencies:
       '@parcel/diagnostic': 2.0.0-canary.1728
@@ -15867,12 +15696,11 @@ snapshots:
       '@parcel/types-internal': 2.12.1-canary.3351
       chrome-trace-event: 1.0.4
 
-  '@parcel/reporter-bundle-buddy@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
+  '@parcel/reporter-bundle-buddy@2.12.1-canary.3351(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))':
     dependencies:
-      '@parcel/plugin': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
+      '@parcel/plugin': 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
     transitivePeerDependencies:
       - '@parcel/core'
-      - '@swc/helpers'
 
   '@parcel/reporter-dev-server@2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))':
     dependencies:
@@ -15913,15 +15741,6 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
 
-  '@parcel/runtime-service-worker@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/plugin': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/utils': 2.12.0
-      nullthrows: 1.1.1
-    transitivePeerDependencies:
-      - '@parcel/core'
-      - '@swc/helpers'
-
   '@parcel/runtime-service-worker@2.12.1-canary.3351(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))':
     dependencies:
       '@parcel/plugin': 2.0.0-canary.1728(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))
@@ -15929,8 +15748,6 @@ snapshots:
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
-
-  '@parcel/rust@2.12.0': {}
 
   '@parcel/rust@2.12.1-canary.3351': {}
 
@@ -16119,19 +15936,6 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
 
-  '@parcel/types@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/cache': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/fs': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/package-manager': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/source-map': 2.1.1
-      '@parcel/workers': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      utility-types: 3.11.0
-    transitivePeerDependencies:
-      - '@parcel/core'
-      - '@swc/helpers'
-
   '@parcel/utils@2.0.0-canary.1728':
     dependencies:
       '@parcel/codeframe': 2.0.0-canary.1728
@@ -16139,17 +15943,6 @@ snapshots:
       '@parcel/logger': 2.0.0-canary.1728
       '@parcel/markdown-ansi': 2.0.0-canary.1728
       '@parcel/rust': 2.12.1-canary.3351
-      '@parcel/source-map': 2.1.1
-      chalk: 4.1.2
-      nullthrows: 1.1.1
-
-  '@parcel/utils@2.12.0':
-    dependencies:
-      '@parcel/codeframe': 2.12.0
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/logger': 2.12.0
-      '@parcel/markdown-ansi': 2.12.0
-      '@parcel/rust': 2.12.0
       '@parcel/source-map': 2.1.1
       chalk: 4.1.2
       nullthrows: 1.1.1
@@ -16275,18 +16068,6 @@ snapshots:
       '@parcel/types-internal': 2.12.1-canary.3351
       '@parcel/utils': 2.0.0-canary.1728
       nullthrows: 1.1.1
-
-  '@parcel/workers@2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)':
-    dependencies:
-      '@parcel/core': 2.0.0-canary.1726(@swc/helpers@0.5.13)
-      '@parcel/diagnostic': 2.12.0
-      '@parcel/logger': 2.12.0
-      '@parcel/profiler': 2.12.0
-      '@parcel/types': 2.12.0(@parcel/core@2.0.0-canary.1726(@swc/helpers@0.5.13))(@swc/helpers@0.5.13)
-      '@parcel/utils': 2.12.0
-      nullthrows: 1.1.1
-    transitivePeerDependencies:
-      - '@swc/helpers'
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
