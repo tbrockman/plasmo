@@ -115,11 +115,7 @@ export const createParcelBuilder = async (
     config: runConfig,
     shouldAutoInstall: true,
 
-    env: {
-      ...publicEnv.extends(bundleConfig).data,
-      PARCEL_WORKERS: "0",
-      PARCEL_MAX_CONCURRENT_CALLS: "1"
-    },
+    env: publicEnv.extends(bundleConfig).data,
 
     defaultTargetOptions: {
       ...defaultTargetOptions,

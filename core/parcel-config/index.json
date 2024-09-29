@@ -6,6 +6,7 @@
     "@parcel/resolver-default",
     "@plasmohq/parcel-resolver-post"
   ],
+  "reporters": ["...", "@plasmohq/parcel-reporter-logger"],
   "transformers": {
     "*.plasmo.manifest.json": ["@plasmohq/parcel-transformer-manifest"],
 
