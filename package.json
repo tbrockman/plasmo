@@ -35,7 +35,8 @@
   "pnpm": {
     "overrides": {
       "@parcel/source-map": "2.1.1",
-      "react-refresh": "0.14.0"
+      "react-refresh": "0.14.0",
+      "@parcel/node-resolver-core": "catalog:"
     }
   },
   "devDependencies": {
