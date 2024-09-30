@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client"
 import { getLayout } from "@plasmo-static-common/react"
 
 // @ts-ignore
-import * as Component from "__plasmo_import_module__"
+import Component from "__plasmo_import_module__"
 
 let __plasmoRoot: HTMLElement = null
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   root.render(
     <Layout>
-      <Component.default />
+      <Component />
     </Layout>
   )
 })

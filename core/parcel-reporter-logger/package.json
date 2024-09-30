@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@parcel/core": "catalog:",
-    "@parcel/plugin": "catalog:"
+    "@parcel/plugin": "catalog:",
+    "@parcel/reporter-cli": "catalog:"
   }
 }
