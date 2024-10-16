@@ -34,9 +34,10 @@ async function build() {
   const bundler = await createParcelBuilder(plasmoManifest, {
     mode: "production",
     shouldContentHash: false,
+    shouldDisableCache: true,
     logLevel: hasFlag("--verbose") ? "verbose" : "info",
     defaultTargetOptions: {
-      shouldOptimize: false,
+      shouldOptimize: true,
       shouldScopeHoist: hasFlag("--hoist")
     }
   })
