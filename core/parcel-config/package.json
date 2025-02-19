@@ -42,10 +42,9 @@
     "@plasmohq/parcel-transformer-inline-css": "workspace:*",
     "@plasmohq/parcel-transformer-manifest": "workspace:*",
     "@plasmohq/parcel-transformer-svelte": "workspace:*",
-    "@plasmohq/parcel-transformer-vue": "workspace:*",
-    "svgo": "^3.0.2"
+    "@plasmohq/parcel-transformer-vue": "workspace:*"
   },
   "devDependencies": {
-    "@plasmohq/parcel-bundler": "workspace:0.5.6"
+    "@plasmohq/parcel-bundler": "workspace:*"
   }
 }

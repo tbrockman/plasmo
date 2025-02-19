@@ -22,7 +22,6 @@
     "@parcel/core": "catalog:",
     "@parcel/diagnostic": "catalog:",
     "@parcel/graph": "catalog:",
-    "@parcel/hash": "catalog:",
     "@parcel/plugin": "catalog:",
     "@parcel/utils": "catalog:",
     "nullthrows": "1.1.1"

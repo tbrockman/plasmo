@@ -1,5 +1,5 @@
 import { resolve } from "path"
-import { hashString } from "@parcel/hash"
+import { hashString } from "@parcel/rust"
 
 import { injectEnv } from "@plasmo/utils/env"
 import { vLog } from "@plasmo/utils/logging"

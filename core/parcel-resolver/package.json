@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@parcel/core": "catalog:",
-    "@parcel/hash": "catalog:",
+    "@parcel/rust": "catalog:",
     "@parcel/plugin": "catalog:",
     "@parcel/types": "catalog:",
     "fast-glob": "3.3.2",
