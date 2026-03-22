@@ -1,10 +1,9 @@
 name: Test examples
 on:
   push:
-    branches: [main]
+    branches: ["main"]
   pull_request:
-    branches: [main]
-  workflow_dispatch:
+    types: [opened, synchronize]
 
 jobs:
   build:
@@ -21,9 +20,8 @@ jobs:
         with:
           submodules: "recursive"
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4.1.0
         with:
-          version: v9.0.6
           run_install: false
 
       - name: Get pnpm store directory
@@ -32,7 +30,7 @@ jobs:
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4.2.3
         name: Setup pnpm cache
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
@@ -49,18 +47,9 @@ jobs:
           pnpm run build:cli
           pnpm i
 
-      - name: "Go to each example and try to build it"
-        run: |
-          pnpm run build:examples
-          # pushd examples
-          # for d in *
-          # do
-          #   test -d "$d" || continue
-          #   pushd "$d"
-          #   rm -rf .plasmo
-          #   rm -rf build
-          #   timeout 5 pnpm dev || code=$?; if [[ $code -ne 124 && $code -ne 0 ]]; then exit $code; fi
-          #   popd
-          # done
-          # popd
-          pnpm run test:examples
+      - name: "Build all examples"
+        run: pnpm run build:examples
+
+      - name: "Test all examples"
+        run: pnpm run test:examples
+          

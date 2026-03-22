@@ -1,7 +1,7 @@
 {
   "extends": "@parcel/config-default",
   "bundler": "@plasmohq/parcel-bundler",
-  "resolvers": ["@parcel/resolver-default", "@plasmohq/parcel-resolver-post"],
+  "resolvers": ["@plasmohq/parcel-resolver", "@parcel/resolver-default", "@plasmohq/parcel-resolver-post"],
   "reporters": ["...", "@plasmohq/parcel-reporter-logger"],
   "transformers": {
     "*.plasmo.manifest.json": ["@plasmohq/parcel-transformer-manifest"],
@@ -54,8 +54,10 @@
   },
   "optimizers": {
     "data-base64:*": ["...", "@parcel/optimizer-data-url"],
-    "*.{html,xhtml}": [],
-    "*.{js,mjs,cjs}": ["@plasmohq/parcel-optimizer-encapsulate"]
+    "*.{js,mjs,cjs}": [
+      "@plasmohq/parcel-optimizer-encapsulate",
+      "@plasmohq/parcel-optimizer-es"
+    ]
   },
   "compressors": {
     "*.js": ["@plasmohq/parcel-compressor-utf8"],

@@ -23,13 +23,13 @@
   },
   "devDependencies": {
     "@plasmo/config": "workspace:*",
-    "tsup": "7.2.0"
+    "tsup": "8.4.0"
   },
   "dependencies": {
     "@parcel/core": "catalog:",
     "@parcel/plugin": "catalog:",
     "@parcel/utils": "catalog:",
-    "browserslist": "4.22.1",
+    "browserslist": "4.24.4",
     "lightningcss": "1.21.8"
   }
 }

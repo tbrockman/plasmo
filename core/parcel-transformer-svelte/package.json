@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@plasmo/config": "workspace:*",
-    "tsup": "7.2.0"
+    "tsup": "8.4.0"
   },
   "dependencies": {
     "@parcel/core": "catalog:",
@@ -31,6 +31,6 @@
     "@parcel/plugin": "catalog:",
     "@parcel/source-map": "catalog:",
     "@parcel/utils": "catalog:",
-    "svelte": "4.2.2"
+    "svelte": "4.2.19"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@plasmohq/parcel-runtime",
-  "version": "0.25.1",
+  "version": "0.25.3",
   "description": "Plasmo Parcel Runtime",
   "files": [
     "dist"
@@ -26,13 +26,13 @@
     "@plasmo/framework-shared": "workspace:*",
     "@plasmo/utils": "workspace:*",
     "@plasmohq/persistent": "workspace:*",
-    "@types/chrome": "0.0.251",
-    "tsup": "7.2.0"
+    "@types/chrome": "0.0.312",
+    "tsup": "8.4.0"
   },
   "dependencies": {
     "@types/trusted-types": "2.0.7",
     "@parcel/core": "catalog:",
     "@parcel/plugin": "catalog:",
-    "react-refresh": "0.14.0"
+    "react-refresh": "0.16.0"
   }
 }
